@@ -1,7 +1,10 @@
 body {
   background: url(/img/bg-main.jpg);
-  max-width: 100%;
+  object-fit: cover;
+ /*
+  width: 100%;
   height: auto;
+  */
 }
 
 .App {
@@ -9,23 +12,25 @@ body {
   font-family: 'Varela Round', sans-serif;
   height: 150vh;
   color: black;
-  overflow: hidden;
 }
 
 .App-header {
   height: 30px;
   color: black;
   padding-bottom: 5px;
+  margin: 3px;
 }
 
 .App-header h1 {
   font-weight: 400;
   font-size: 46px;
+  margin: 3px;
 }
 
 .App-header h2{
   font-size: 16px;
   font-weight: 300;
+  margin: 3px;
 }
 
 .Board h4{
@@ -33,6 +38,7 @@ body {
   font-weight: 300;
   color: deeppink;
   padding-top: 20px;
+  margin: 2px;
 }
 h4 {
   padding: 10px 5px 5px 5px;
@@ -40,12 +46,12 @@ h4 {
 }
 .score-keeper {
   padding: 5px;
-  margin: 0px;
+  margin: 2px;
   font-size: 28px;
 }
 .character-box{
   height: 50vh;
-  padding: 5px 5px;
+  padding: 25px 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -79,9 +85,12 @@ h4 {
   }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 780px) {
   img.profile-pic {
     height: 100px;
+  }
+  .App-header h1 {
+    font-size: 30px;
   }
 }
 
@@ -103,8 +112,14 @@ h4 {
   }
 
   img.profile-pic {
-    height: 70px;
+    height: 80px;
   }
 
+}
+
+@media screen and (max-width: 412px) {
+  img.profile-pic {
+    height: 50px;
+  }
 }
 
