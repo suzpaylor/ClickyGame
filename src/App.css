@@ -95,7 +95,16 @@ h4 {
   }
 
   .Board h4 {
-    font-size: 14px;
+    font-size: 24px;
   }
+
+  .score-keeper {
+    font-size: 24px;
+  }
+
+  img.profile-pic {
+    height: 70px;
+  }
+
 }
 
